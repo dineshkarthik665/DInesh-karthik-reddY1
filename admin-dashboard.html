@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="STACKLY Retirement Planning Services - professional pension, retirement income and wealth protection guidance.">
+    <title>
+      Retirement Advisor Dashboard | STACKLY
+    </title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body data-page="admin-dashboard">
+    <main>
+      <section class="dashboard-shell">
+        <aside class="dash-sidebar" id="dashboardSidebar">
+          <a href="index.html" aria-label="STACKLY home" class="logo-link">
+            <img src="images/stackly-logo.webp" alt="STACKLY logo">
+          </a>
+          <a class="dash-home-btn" href="index.html">
+            Back to Home
+          </a>
+          <button data-panel="overview" class="active">
+            Overview
+          </button>
+          <button data-panel="plan">
+            Retirement Plan
+          </button>
+          <button data-panel="portfolio">
+            Portfolio
+          </button>
+          <button data-panel="pension">
+            Pension
+          </button>
+          <button data-panel="income">
+            Income Projection
+          </button>
+          <button data-panel="reports">
+            Reports
+          </button>
+          <button data-panel="messages">
+            Messages
+          </button>
+          <button data-panel="settings">
+            Settings
+          </button>
+          <button id="logoutBtn" class="logout">
+            Sign Out
+          </button>
+        </aside>
+        <button class="dash-overlay" type="button" aria-label="Close dashboard menu"></button>
+        <div class="dash-main">
+          <div class="dash-mobile-bar">
+            <button class="dash-menu-toggle" type="button" aria-label="Open dashboard menu" aria-expanded="false" aria-controls="dashboardSidebar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <a class="dash-home-link" href="index.html">
+              Back to Home
+            </a>
+          </div>
+          <header class="dash-header">
+            <div>
+              <span class="eyebrow">
+                STACKLY
+              </span>
+              <h1>
+                Retirement Advisor Dashboard
+              </h1>
+              <p id="userLine">
+                Welcome to your retirement workspace.
+              </p>
+            </div>
+            <img src="images/dashboard-hero.webp" alt="Dashboard visual">
+          </header>
+          <div class="dash-cards">
+            <article>
+              <span>
+                Goal Progress
+              </span>
+              <b>
+                82%
+              </b>
+            </article>
+            <article>
+              <span>
+                Portfolio Value
+              </span>
+              <b>
+                ₹48.6L
+              </b>
+            </article>
+            <article>
+              <span>
+                Pension Readiness
+              </span>
+              <b>
+                74%
+              </b>
+            </article>
+            <article>
+              <span>
+                Monthly Income Gap
+              </span>
+              <b>
+                ₹18K
+              </b>
+            </article>
+          </div>
+          <section class="dash-panel active" id="overview">
+            <h2>
+              Overview
+            </h2>
+            <div class="chart-row">
+              <div class="bar-chart">
+                <i style="height:70%">
+                </i>
+                <i style="height:88%">
+                </i>
+                <i style="height:58%">
+                </i>
+                <i style="height:76%">
+                </i>
+              </div>
+              <div>
+                <h3>
+                  Recent activity
+                </h3>
+                <ul>
+                  <li>
+                    Retirement goal review completed
+                  </li>
+                  <li>
+                    Pension statement uploaded
+                  </li>
+                  <li>
+                    Advisor message received
+                  </li>
+                  <li>
+                    Income projection updated
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="dash-panel" id="plan">
+            <h2>
+              Retirement Plan
+            </h2>
+            <p class="dash-copy">
+              Advisor planning tasks are organized by client stage, review cycle and high-priority retirement milestones.
+            </p>
+            <div class="dash-split">
+              <div>
+                <h3>
+                  Priority reviews
+                </h3>
+                <ul class="dash-list">
+                  <li>
+                    6 client retirement roadmaps due for quarterly review
+                  </li>
+                  <li>
+                    3 late-stage corpus plans need inflation revision
+                  </li>
+                  <li>
+                    2 family protection plans waiting for compliance check
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3>
+                  Team actions
+                </h3>
+                <ul class="dash-list">
+                  <li>
+                    Finalize annuity comparison deck for July meetings
+                  </li>
+                  <li>
+                    Confirm client cash-flow assumptions before Friday
+                  </li>
+                  <li>
+                    Assign tax projection follow-ups to support desk
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="dash-panel" id="portfolio">
+            <h2>
+              Portfolio
+            </h2>
+            <p class="dash-copy">
+              Portfolio monitoring highlights which client allocations need attention, rebalancing or documentation updates.
+            </p>
+            <table class="portfolio-table">
+              <tr>
+                <th>
+                  Segment
+                </th>
+                <th>
+                  Client share
+                </th>
+                <th>
+                  Status
+                </th>
+              </tr>
+              <tr>
+                <td data-label="Segment">
+                  Growth portfolios
+                </td>
+                <td data-label="Client share">
+                  45%
+                </td>
+                <td data-label="Status">
+                  Review 2 accounts
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Segment">
+                  Income portfolios
+                </td>
+                <td data-label="Client share">
+                  30%
+                </td>
+                <td data-label="Status">
+                  Stable mix
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Segment">
+                  Capital protection plans
+                </td>
+                <td data-label="Client share">
+                  15%
+                </td>
+                <td data-label="Status">
+                  Documentation pending
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Segment">
+                  Liquidity reserves
+                </td>
+                <td data-label="Client share">
+                  10%
+                </td>
+                <td data-label="Status">
+                  No action
+                </td>
+              </tr>
+            </table>
+          </section>
+          <section class="dash-panel" id="pension">
+            <h2>
+              Pension
+            </h2>
+            <p class="dash-copy">
+              Pension workflows help the advisory team track claim readiness, employer documentation and annuity recommendations.
+            </p>
+            <ul class="dash-list">
+              <li>
+                4 pension transfer cases awaiting employer confirmation
+              </li>
+              <li>
+                2 annuity comparison notes ready for client presentation
+              </li>
+              <li>
+                1 pension gap alert flagged for immediate advisor review
+              </li>
+            </ul>
+          </section>
+          <section class="dash-panel" id="income">
+            <h2>
+              Income Projection
+            </h2>
+            <p class="dash-copy">
+              Income forecasting compares each client plan against inflation pressure, withdrawal sustainability and lifestyle targets.
+            </p>
+            <div class="dash-stat-strip">
+              <div>
+                <span>
+                  Active forecasts
+                </span>
+                <strong>
+                  26
+                </strong>
+              </div>
+              <div>
+                <span>
+                  Gap alerts this week
+                </span>
+                <strong>
+                  5
+                </strong>
+              </div>
+              <div>
+                <span>
+                  Plans above target
+                </span>
+                <strong>
+                  18
+                </strong>
+              </div>
+            </div>
+          </section>
+          <section class="dash-panel" id="reports">
+            <h2>
+              Reports
+            </h2>
+            <p class="dash-copy">
+              Advisory reporting is grouped by client meetings, internal compliance and weekly performance summaries.
+            </p>
+            <ul class="dash-list">
+              <li>
+                Weekly client service report generated on 29 June 2026
+              </li>
+              <li>
+                Compliance review pack ready for partner approval
+              </li>
+              <li>
+                Pension case-status summary shared with operations
+              </li>
+            </ul>
+          </section>
+          <section class="dash-panel" id="messages">
+            <h2>
+              Messages
+            </h2>
+            <p class="dash-copy">
+              Team communication keeps client follow-ups, service handoffs and urgent planning notes visible.
+            </p>
+            <ul class="dash-list">
+              <li>
+                Operations requested KYC refresh for 3 senior clients
+              </li>
+              <li>
+                Relationship team shared two new meeting confirmations
+              </li>
+              <li>
+                Support desk marked one pension claim as escalated
+              </li>
+            </ul>
+          </section>
+          <section class="dash-panel" id="settings">
+            <h2>
+              Settings
+            </h2>
+            <p class="dash-copy">
+              Control team alerts, dashboard visibility and advisor workflow preferences from one panel.
+            </p>
+            <div class="dash-split">
+              <div>
+                <h3>
+                  Workspace preferences
+                </h3>
+                <ul class="dash-list">
+                  <li>
+                    Daily briefing emails enabled at 8:30 AM
+                  </li>
+                  <li>
+                    Priority client alerts pinned to overview
+                  </li>
+                  <li>
+                    Document access limited to advisor roles
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3>
+                  Service controls
+                </h3>
+                <ul class="dash-list">
+                  <li>
+                    Review reminders set for 5 working days before due date
+                  </li>
+                  <li>
+                    Automatic report export enabled for weekly summaries
+                  </li>
+                  <li>
+                    Internal notes visible to assigned team only
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script src="js/app.js">
+    </script>
+  </body>
+</html>
